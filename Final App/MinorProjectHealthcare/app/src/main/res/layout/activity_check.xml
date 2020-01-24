@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Symptoms"
+        android:id="@+id/Text1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textAlignment="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Text1"
+        tools:listitem="@layout/model"
+        android:layout_marginTop="30dp"
+        android:id="@+id/Recyler"
+        />
+
+    <Button
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Recyler"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="158dp"
+        android:foregroundGravity="bottom"
+        android:text="Confirm" />
+
+    <TextView
+        android:id="@+id/text_view_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fab"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="29dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_parse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_result"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:minHeight="0dp"
+        android:text="Predict" />
+
+</RelativeLayout>

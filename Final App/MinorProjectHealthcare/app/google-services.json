@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "550635290717",
+    "firebase_url": "https://minorprojecthealthcare.firebaseio.com",
+    "project_id": "minorprojecthealthcare",
+    "storage_bucket": "minorprojecthealthcare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550635290717:android:7d0a208b9a3b696fe94db4",
+        "android_client_info": {
+          "package_name": "com.example.minorprojecthealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550635290717-l4rv49ln6uetqq9g3tl5p1lumlofrq3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.minorprojecthealthcare",
+            "certificate_hash": "e5a3b06b4f587896cacd31203019017e1296a25e"
+          }
+        },
+        {
+          "client_id": "550635290717-2kv4fi75peal60uqkip6q2av50cfi12m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGp_XMafTViX3a6llXTWZsWCtm20tmqHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550635290717-2kv4fi75peal60uqkip6q2av50cfi12m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

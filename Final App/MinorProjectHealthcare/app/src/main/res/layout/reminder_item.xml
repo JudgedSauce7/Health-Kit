@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date"
+            android:text="2"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nov"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/colorAccent"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/med_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dioxiprine"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:layout_margin="8dp"/>
+
+
+            <TextView
+                android:id="@+id/med_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Takes care of headaches"
+                android:layout_below="@+id/med_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginStart="8dp"
+                android:text="ansn"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/med_description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <Button
+                android:id="@+id/Remove"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/med_description"
+                android:layout_marginLeft="189dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/time"
+                android:text="Remove"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/reminder_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetReminder">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorMidGreen"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_hint"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@android:color/black"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:hintAnimationEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/text_med_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Medicine Name"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorMidGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/parent_linear_layout"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/show_time1"
+                            android:gravity="center"
+                            android:layout_weight="5"
+                            android:textSize="24dp"
+                            android:text="Time Selected"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/pick_time1"
+                            android:text="Pick Time"
+                            android:background="#ffffff"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/show_time2"
+                            android:gravity="center"
+                            android:layout_weight="5"
+                            android:textSize="24dp"
+                            android:text="Time Selected"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/pick_time2"
+                            android:text="Pick Time"
+                            android:background="#ffffff"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/show_time3"
+                            android:gravity="center"
+                            android:layout_weight="5"
+                            android:textSize="24dp"
+                            android:text="Time Selected"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/pick_time3"
+                            android:text="Pick Time"
+                            android:background="#ffffff"
+                            android:layout_height="match_parent"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:id="@+id/calender_start"
+                            android:background="@drawable/ic_calender"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"/>
+
+                        <TextView
+                            android:hint="Start Date"
+                            android:gravity="center"
+                            android:id="@+id/start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"/>
+                        <Button
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/calender_stop"
+                            android:background="@drawable/ic_calender"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"/>
+                        <TextView
+                            android:hint="Stop Date"
+                            android:gravity="center"
+                            android:id="@+id/stop_date"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorMidGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/description"
+                        android:textColorHint="@android:color/black"
+                        app:hintTextAppearance="@style/TextAppearance.AppCompat.Title"
+                        app:hintAnimationEnabled="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/description_input"
+                            android:hint="Add Description"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_margin="10dp"
+                    android:text="Cancel"
+                    android:background="#ffffff"
+                    android:layout_height="wrap_content"/>
+                <Button
+                    android:id="@+id/add"
+                    android:layout_width="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2"
+                    android:text="Add"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
